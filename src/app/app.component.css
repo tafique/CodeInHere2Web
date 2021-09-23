@@ -7,3 +7,21 @@
     overflow: hidden;
     background-repeat: no-repeat;
 }
+
+::ng-deep .customDialog {
+    width: 20% !important;
+    height: 100% !important;
+    background: #000428; 
+    background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 650px) {
+    ::ng-deep .customDialog {
+        width: 50% !important;
+        height: 100% !important;
+        background: #000428; 
+        background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
+        overflow: hidden;
+    }
+}

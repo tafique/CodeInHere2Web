@@ -12,7 +12,7 @@ form
     text-align: center;
 }
 
-::ng-deep .customDialog {
+::ng-deep .customDialog1 {
     background-color: rgb(86, 174, 233) !important;
     width: 60% !important;
     height: 50% !important;

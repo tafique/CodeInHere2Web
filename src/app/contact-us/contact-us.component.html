@@ -1,11 +1,6 @@
 <br><br>
 
-<div class="form">
-  <p-button (click)="contactUs_by_Mail()"  icon="pi pi-users" badgeClass="p-badge-info" label="Contact Us through Mail"></p-button>
-</div>
-
-
-  <p-dialog header="Contact Us through Mail" [(visible)]="displayContactForm" [modal]="true" [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false" styleClass="customDialog">
+  <p-dialog header="Contact Us through Mail" [(visible)]="displayContactForm" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false" styleClass="customDialog1">
 
   <div class="form">
 
@@ -57,5 +52,7 @@
       <ng-template pTemplate="footer">
           <p-button icon="pi pi-check" (click)="displayContactForm=false" label="Ok" styleClass="p-button-text" ></p-button>
       </ng-template>
-</p-dialog>
-
+</p-dialog><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="form">
+  <p-button (click)="contactUs_by_Mail()"  icon="pi pi-users" badgeClass="p-badge-info" label="Contact Us through Mail"></p-button>
+</div>
