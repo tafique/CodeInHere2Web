@@ -1,0 +1,9 @@
+.responsive-img{
+    background-image: url("../../src/assets/images/backimgae.jpg");
+    background-position: center center;
+    background-attachment:initial;
+    background-size:cover;
+    height: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}

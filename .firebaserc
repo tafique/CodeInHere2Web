@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "codeinhere-ang"
+  },
+  "targets": {
+    "codeinhere-ang": {
+      "hosting": {
+        "codeInHere": [
+          "codeinhere-ang"
+        ]
+      }
+    }
+  }
+}
