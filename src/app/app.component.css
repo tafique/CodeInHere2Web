@@ -1,11 +1,12 @@
 .responsive-img{
     background-image: url("../../src/assets/images/backimgae.jpg");
     background-position: center center;
-    background-attachment:initial;
+    background-attachment:fixed;
     background-size:cover;
     height: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
+    width: 100%;
 }
 
 ::ng-deep .customDialog {
@@ -16,7 +17,7 @@
     overflow: hidden;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 720px) {
     ::ng-deep .customDialog {
         width: 50% !important;
         height: 100% !important;
