@@ -7,7 +7,7 @@
     overflow: hidden;
     background-repeat: no-repeat;
     width: 100%;
-    position: absolute;
+    
 }
 
 ::ng-deep .customDialog {
@@ -20,7 +20,7 @@
 
 @media only screen and (max-width: 720px) {
     ::ng-deep .customDialog {
-        width: 50% !important;
+        width: 60% !important;
         height: 100% !important;
         background: #000428; 
         background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
@@ -34,8 +34,6 @@
         height: 100%;
         overflow: hidden;
         background-repeat: no-repeat;
-        width: 100%;
-        position: absolute;
+        width: 100%;       
     }
-    
 }
