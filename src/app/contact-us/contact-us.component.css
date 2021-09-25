@@ -44,7 +44,22 @@ form
 }  
 
 .p-dialog .p-dialog-content {
-    background: #c7e2c4;
+    background: linear-gradient(to left, #f5fcfd, #90badc);
     color: #495057;
     padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.p-dialog .p-dialog-header {
+    background: #000000d1;
+    color: #5e656b;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+.p-dialog .p-dialog-footer {
+    border-top: 0 none;
+    background: #000000b0;
+    color: #d4dde6b5;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    text-align: right;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }

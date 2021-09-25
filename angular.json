@@ -70,7 +70,11 @@
             },
             "development": {
               "buildOptimizer": false,
-              "optimization": false,
+              "optimization": {
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }},
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
@@ -123,4 +127,4 @@
     }
   },
   "defaultProject": "codeInHere"
-}
+  }

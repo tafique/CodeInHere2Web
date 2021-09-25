@@ -1,36 +1,35 @@
 <br><br>
-
-  <p-dialog header="Contact Us through Mail" [(visible)]="displayContactForm" [modal]="true" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false" styleClass="customDialog1">
+<p-dialog header="Contact Us through Mail" [(visible)]="displayContactForm" [modal]="true"
+  [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false"
+  [resizable]="false" styleClass="customDialog1">
 
   <div class="form">
 
-    <form [formGroup]="contactForm" >
+    <form [formGroup]="contactForm">
 
       <div class="container">
-        <mat-form-field  appearance="outline" class="heighttext2">
+        <mat-form-field appearance="outline" class="heighttext2">
           <mat-label>Enter your name</mat-label>
-          <input matInput id="name"  placeholder="Your Full name" formControlName="name" required>
+          <input matInput id="name" placeholder="Your Full name" formControlName="name" required>
         </mat-form-field>
       </div>
-    
-        <div class="container">
-          <mat-form-field  appearance="outline" class="heighttext2">
-            <mat-label>Enter your email</mat-label>
-            <input matInput id="email"  placeholder="pat@example.com" formControlName="email" required>
-            <mat-error *ngIf="contactForm.value.email.invalid">
-              <h1>
-                {{getErrorMessage()}}
-              </h1>
-            </mat-error>
-          </mat-form-field>
-        </div>
-    
-      <br><br>
-      
+
       <div class="container">
-        <mat-form-field  appearance="outline" class="heighttext3">
+        <mat-form-field appearance="outline" class="heighttext2">
+          <mat-label>Enter your email</mat-label>
+          <input matInput id="email" placeholder="pat@example.com" formControlName="email" required>
+          <mat-error *ngIf="contactForm.value.email.invalid">
+            <h1>
+              {{getErrorMessage()}}
+            </h1>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="container">
+        <mat-form-field appearance="outline" class="heighttext3">
           <mat-label>Enter your message for us!!!</mat-label>
-          <input matInput id="message"  placeholder="type message" formControlName="message" required>
+          <input matInput id="message" placeholder="type message" formControlName="message" required>
         </mat-form-field>
       </div>
 
@@ -38,21 +37,25 @@
 
       <div class="card">
         <p>Upload your recent Image</p>
-        <p-fileUpload name="myfile[]" url="./upload.php" accept="image/*" (uploadHandler)="onUpload($event)"></p-fileUpload>
+        <p-fileUpload name="myfile[]" url="./upload.php" accept="image/*" (uploadHandler)="onUpload($event)">
+        </p-fileUpload>
       </div>
-    
+
       <p-messages [(value)]="msgs1" [enableService]="false"></p-messages>
       <div>
-        <p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
-        <button type="button" pButton pRipple label="Send" (click)="sendMail($event)" [disabled]="!this.contactForm.controls.email.valid || !this.contactForm.controls.message.valid || !this.contactForm.controls.name.valid" icon="pi pi-check"></button>
+        <p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog><br>
+        <button type="button" pButton pRipple label="Send" (click)="sendMail($event)"
+          [disabled]="!this.contactForm.controls.email.valid || !this.contactForm.controls.message.valid || !this.contactForm.controls.name.valid"
+          icon="pi pi-check"></button>
       </div>
-   
+
     </form>
   </div>
-      <ng-template pTemplate="footer">
-          <p-button icon="pi pi-check" (click)="displayContactForm=false" label="Ok" styleClass="p-button-text" ></p-button>
-      </ng-template>
-</p-dialog><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <ng-template pTemplate="footer">
+    <p-button icon="pi pi-check" (click)="displayContactForm=false" label="Ok" styleClass="p-button-text"></p-button>
+  </ng-template>
+</p-dialog><br><br><br><br><br><br><br><br><br><br><br>
 <div class="form">
-  <p-button pButton (click)="contactUs_by_Mail()"  icon="pi pi-users" badgeClass="p-badge-info" label="Contact Us through Mail"></p-button>
+  <p-button pButton (click)="contactUs_by_Mail()" icon="pi pi-users" badgeClass="p-badge-info"
+    label="Contact Us through Mail"></p-button>
 </div>

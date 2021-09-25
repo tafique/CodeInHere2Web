@@ -1,36 +1,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<div>
+<div class="centerized-img">
     <div class="img-hover-zoom--colorize">
         <div class="jyoti">
             <img src="../../assets/images/jyoti.png" class="rounded-circle" alt="Cinque Terre">
-            <h1></h1>
-            <button pButton type="button" styleClass="p-button-sm" class="p-button-raised p-button-rounded" label="About Me" (click)="showJyoti()"></button>
+            <br><br>
+            <button pButton type="button" styleClass="p-button-sm" class="p-button-raised p-button-rounded"
+                label="About Me" (click)="showJyoti()"></button>
+            <p-dialog [(visible)]="displayJyoti" [modal]="true" [breakpoints]="{'960px': '75vw'}"
+                [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false">
+                <p class="text-primary">
+                    Hi , I am Jyoti Ranjan Satapathy currently working as a FullStack Web Developer at Shipping Erp Pvt
+                    Ltd.I am well versed with TypeScript & JavaScript,Angular,Nodejs,Sql,Python.
+                    With a passion for coding ,I like to teach and guide anyone who requires any help in that matter.
+                </p>
+                <a href="https://www.linkedin.com/in/jyoti-ranjan-satapathy-51247916b/" target="blank"
+                    class="fa fa-linkedin"></a>
+            </p-dialog>
         </div>
     </div>
-       
+
     <div class="img-hover-zoom--colorize">
         <div class="karan">
             <img src="../../assets/images/karan.png" class="rounded-circle" alt="Cinque Terre">
-            <h1></h1>
-            <button pButton type="button" styleClass="p-button-sm" class="p-button-raised1 p-button-rounded" label="About Me" (click)="showKaran()"></button>
-        </div>  
+            <br><br>
+            <button pButton type="button" styleClass="p-button-sm" class="p-button-raised1 p-button-rounded"
+                label="About Me" (click)="showKaran()"></button>
+            <p-dialog [(visible)]="displayKaran" [modal]="true" [breakpoints]="{'960px': '75vw'}"
+                [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false">
+                <p class="text-primary">
+                    Hi, I am Karan Biswal an Incoming Software Developer at FactSet.I love DSA (DataStructures and
+                    Algorithms). What fascinates me the most is that a big part of coding is problem solving
+                    and it comes with much practice for building logic in this case. I am sure with my knowledge i can
+                    guide junior aspiring coders to be good at it.
+                </p>
+                <a href="https://www.linkedin.com/in/karan-biswal-80107a1ab/" target="blank" class="fa fa-linkedin"></a>
+            </p-dialog>
+        </div>
     </div>
 </div>
-
-
-<p-dialog [(visible)]="displayJyoti" [modal]="true"  [breakpoints]="{'960px': '75vw'}" [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false">
-    <p class="text-primary">
-        Hi , I am Jyoti Ranjan Satapathy currently working as a FullStack Web Developer at Shipping Erp Pvt Ltd.I am well versed with TypeScript & JavaScript,Angular,Nodejs,Sql,Python.
-        With a passion for coding ,I like to teach and guide anyone who requires any help in that matter.
-    </p>
-    <a href="https://www.linkedin.com/in/jyoti-ranjan-satapathy-51247916b/" target="blank" class="fa fa-linkedin"></a>
-</p-dialog>
-
-<p-dialog [(visible)]="displayKaran" [modal]="true"  [breakpoints]="{'960px': '75vw'}" [style]="{width: '50vw'}" [maximizable]="true" [draggable]="false" [resizable]="false">
-    <p class="text-primary">
-        Hi, I am Karan Biswal an Incoming Software Developer at FactSet.I love DSA (DataStructures and Algorithms). What fascinates me the most is that a big part of coding is problem solving
-        and it comes with much practice for building logic in this case. I am sure with my knowledge i can guide junior aspiring coders to be good at it.
-    </p>
-    <a href="https://www.linkedin.com/in/karan-biswal-80107a1ab/" target="blank" class="fa fa-linkedin"></a>
-</p-dialog>
-

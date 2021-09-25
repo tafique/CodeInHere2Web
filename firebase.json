@@ -1,29 +1,12 @@
 {
   "hosting": [
     {
+      "target": "codeInHere",
       "public": "dist/codeInHere",
       "ignore": [
         "firebase.json",
         "**/.*",
         "**/node_modules/**"
-      ]
-    },
-    {
-      "target": "codeInHere",
-      "public": "dist/codeInHere",
-      "ignore": [
-        "**/.*"
-      ],
-      "headers": [
-        {
-          "source": "*.[0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f][0-9a-f].+(css|js)",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "public,max-age=31536000,immutable"
-            }
-          ]
-        }
       ],
       "rewrites": [
         {

@@ -1,9 +1,12 @@
+.centerized-img{
+text-align: center;
+}
 .jyoti{
     width:100%;
     height: auto;
     position:absolute;
     top: 45%;
-    left: 38%;
+    left: 36%;
     display: block;
     max-width: fit-content;
     text-align: center;
@@ -53,14 +56,30 @@
 .fa:hover {
   opacity: 0.7;
 }
+.text-primary {
+  color: #244986 !important;
+  font-style: italic;
+}
 
-@media only screen and (min-width: 320px) and (max-width: 7200px){
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.p-dialog .p-dialog-header {
+  border-bottom: 0 none;
+  background: #000000b3;
+  color: #495057;
+  padding: .5rem;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+@media only screen and (min-width: 250px) and (max-width: 720px){
   .jyoti{
     width: 33%;
     height: auto;
     position: absolute;
     top: 45%;
-    left: 13%;
+    left: 16%;
     display: block;
     max-width: fit-content;
     text-align: center;
@@ -98,11 +117,11 @@
   }
 
   .p-button-raised {
-  max-width: 60%;
+    max-width: 80%;
   }  
 
   .p-button-raised1 {
-    max-width: 60%;
+    max-width: 80%;
   } 
 
   .p-button-label {
@@ -123,6 +142,24 @@
   opacity: 0.7;
   }
 
+  .text-primary {
+    color: #244986 !important;
+    font-style: italic;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.p-dialog .p-dialog-header {
+  border-bottom: 0 none;
+  background: #000000b3;
+  color: #495057;
+  padding: .5rem;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+  
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1440px) {
@@ -131,7 +168,7 @@
     height: auto;
     position: absolute;
     top: 45%;
-    left: 13%;
+    left: 16%;
     display: block;
     max-width: fit-content;
     text-align: center;
@@ -193,4 +230,21 @@
   opacity: 0.7;
   }
 
+  .text-primary {
+    color: #244986 !important;
+    font-style: italic;
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+.p-dialog .p-dialog-header {
+  border-bottom: 0 none;
+  background: #000000b3;
+  color: #495057;
+  padding: .5rem;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
 }

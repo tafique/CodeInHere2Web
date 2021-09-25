@@ -1,12 +1,12 @@
-import { Component, ViewEncapsulation} from '@angular/core';
-import { MessageService,ConfirmationService } from 'primeng/api';
+import { Component, ViewEncapsulation } from '@angular/core';
+import { MessageService, ConfirmationService } from 'primeng/api';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
-  providers: [MessageService,ConfirmationService],
+  providers: [MessageService, ConfirmationService],
   styleUrls: ['./contact-us.component.css'],
   encapsulation: ViewEncapsulation.None
 })
@@ -16,14 +16,14 @@ export class ContactUsComponent {
   displayContactForm: boolean = false;
   uploadedFiles: any[] = [];
 
-  constructor(private confirmationService: ConfirmationService , private messageService: MessageService , private http: HttpClient) {}
+  constructor(private confirmationService: ConfirmationService, private messageService: MessageService, private http: HttpClient) { }
 
   contactForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
-    message : new FormControl('', [Validators.required])
+    message: new FormControl('', [Validators.required])
   });
- 
+
   contactUs_by_Mail() {
     this.displayContactForm = true;
   }
@@ -44,20 +44,20 @@ export class ContactUsComponent {
             message: this.contactForm.value.message,
           }
         };
-    
+
         this.http.post('https://api.emailjs.com/api/v1.0/email/send', data, { responseType: 'text' })
           .subscribe((result) => {
-              this.msgs1 = [
-                {severity:'success', summary:'Success', detail:'Your Response has been submitted'}
+            this.msgs1 = [
+              { severity: 'success', summary: 'Success', detail: 'Your Response has been submitted' }
             ];
           }, (error: HttpErrorResponse) => {
             this.msgs1 = [
-              {severity:'error', summary:'Error', detail:`${error.message}`}
-          ];
+              { severity: 'error', summary: 'Error', detail: `${error.message}` }
+            ];
           }
-        );
+          );
       }
-  });
+    });
 
   }
 
@@ -69,11 +69,11 @@ export class ContactUsComponent {
   }
 
 
-  onUpload(event:any) {
-    for(let file of event.files) {
-        this.uploadedFiles.push(file);
+  onUpload(event: any) {
+    for (let file of event.files) {
+      this.uploadedFiles.push(file);
     }
-    this.messageService.add({severity: 'info', summary: 'Success', detail: 'File Uploaded'});
+    this.messageService.add({ severity: 'info', summary: 'Success', detail: 'File Uploaded' });
   }
 }
 
