@@ -1,4 +1,4 @@
-.responsive-img{
+.img-responsive{
     background-image: url("../../src/assets/images/backimgae.jpg");
     background-position: center center;
     background-attachment:fixed;
@@ -6,27 +6,29 @@
     height: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
-    width: 100%;
+    width:2000px;
+    position: absolute;
     
 }
 
 ::ng-deep .customDialog {
-    width: 20% !important;
+    width: 25% !important;
     height: 100% !important;
     background: #000428; 
     background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
     overflow: hidden;
 }
 
-@media only screen and (max-width: 720px) {
+
+@media  screen and (min-width: 320px) and (max-width: 720px) {
     ::ng-deep .customDialog {
-        width: 60% !important;
+        width: 45% !important;
         height: 100% !important;
         background: #000428; 
         background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
         overflow: hidden;
     }
-    .responsive-img{
+    .img-responsive{
         background-image: url("../../src/assets/images/backimgae.jpg");
         background-position: center center;
         background-attachment:fixed;
@@ -35,5 +37,34 @@
         overflow: hidden;
         background-repeat: no-repeat;
         width: 100%;       
+        margin: 0 ;
+        
+    }
+}
+
+
+@media  screen and (min-width: 721px) and (max-width: 1440px)  {
+    ::ng-deep .customDialog {
+        width: 50% !important;
+        height: 100% !important;
+        background: #000428; 
+        background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
+        overflow: hidden;
+    }
+    .img-responsive{
+        background-image: url("../../src/assets/images/backimgae.jpg");
+        background-position: center center;
+        background-attachment:fixed;
+        background-size:cover;
+        height: 100%;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        width: 100%;     
+        margin: 0 ;
+          
+    }
+    .p-button {
+        font-size: 2em;
+        font: 30px;
     }
 }
