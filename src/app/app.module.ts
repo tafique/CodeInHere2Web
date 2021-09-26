@@ -21,6 +21,8 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {ConfirmDialogModule} from 'primeng/confirmdialog';
+import {MenubarModule} from 'primeng/menubar';
+
 
 @NgModule({
   declarations: [
@@ -48,7 +50,8 @@ import {ConfirmDialogModule} from 'primeng/confirmdialog';
     FileUploadModule,
     MatFormFieldModule,
     MatInputModule,
-    ConfirmDialogModule
+    ConfirmDialogModule,
+    MenubarModule
     
   ],
   providers: [],

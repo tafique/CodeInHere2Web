@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MenuItem} from 'primeng/api';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CodeInHere';
-  visibleSidebar1:any
+  visibleSidebar1: any
+  tag1 = '<'
+  tag2='/>'
 }

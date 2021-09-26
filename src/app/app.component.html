@@ -1,18 +1,18 @@
 <div class="img-responsive">
-    <button pButton type="button" icon="pi pi-list" label="Show More" (click)="visibleSidebar1 = true"
-        icon="pi pi-list"></button>
-    <p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000" styleClass="customDialog">
+    <button pButton type="button" label="Navigate" icon="pi pi-list" (click)="visibleSidebar1 = true" icon="pi pi-list"></button>
+    <p-sidebar [(visible)]="visibleSidebar1" position="top" [baseZIndex]="10000" styleClass="customDialog">
         <h3></h3>
         <br><br>
         <a routerLink="Contact Us">
-            <button pButton pRipple type="button" label="Contact Us" icon="pi pi-bell"
-                class="p-button-rounded p-button-warning"></button>
+            <button pButton pRipple type="button" (click)="visibleSidebar1 = false" label="Contact Us" icon="pi pi-bell" class="p-button-rounded p-button-warning"></button>
         </a>
         <br><br>
         <a routerLink="About Us">
-            <button pButton pRipple type="button" label="About Us" icon="pi pi-user"
-                class="p-button-rounded p-button-info"></button>
+            <button pButton pRipple type="button" (click)="visibleSidebar1 = false" label="About Us" icon="pi pi-user" class="p-button-rounded p-button-info"></button>
         </a>
     </p-sidebar>
+    <div class="centre-text">
+        <span class="greytext">{{tag1}}codeIn</span><span class="blackText">HERE{{tag2}}</span>
+    </div>
     <router-outlet></router-outlet>
 </div>

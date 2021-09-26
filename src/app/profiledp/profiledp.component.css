@@ -1,10 +1,11 @@
-.centerized-img{
-text-align: center;
+.centerized-img {
+    text-align: center;
 }
-.jyoti{
-    width:100%;
+
+.jyoti {
+    width: 100%;
     height: auto;
-    position:absolute;
+    position: absolute;
     top: 45%;
     left: 36%;
     display: block;
@@ -12,10 +13,10 @@ text-align: center;
     text-align: center;
 }
 
-.karan{
-    width:100%;
+.karan {
+    width: 100%;
     height: auto;
-    position:absolute;
+    position: absolute;
     top: 45%;
     left: 54%;
     display: block;
@@ -27,224 +28,213 @@ text-align: center;
     transition: transform .5s, filter 1.5s ease-in-out;
     filter: grayscale(100%);
     max-width: 100%;
-    
-  }
-  
+}
+
 .img-hover-zoom--colorize:hover img {
     filter: grayscale(0);
     transform: scale(1.1);
-    max-width:100%;
-  }
-  
+    max-width: 100%;
+}
+
 .img__wrap:hover .img__description {
     visibility: visible;
     opacity: 1;
-    max-width:100%;
- 
-  }
+    max-width: 100%;
+}
 
- .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
 }
 
 .fa:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
+
 .text-primary {
-  color: #244986 !important;
-  font-style: italic;
+    color: #244986 !important;
+    font-style: italic;
 }
 
 p {
-  margin-top: 0;
-  margin-bottom: 0rem;
-}
-.p-dialog .p-dialog-header {
-  border-bottom: 0 none;
-  background: #000000b3;
-  color: #495057;
-  padding: .5rem;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
-@media only screen and (min-width: 250px) and (max-width: 720px){
-  .jyoti{
-    width: 33%;
-    height: auto;
-    position: absolute;
-    top: 45%;
-    left: 16%;
-    display: block;
-    max-width: fit-content;
-    text-align: center;
-  }
-  .karan{
-    width: 33%;
-    height: auto;
-    position: absolute;
-    top: 45%;
-    left: 54%;
-    display: block;
-    max-width: fit-content;
-    text-align: center;
-  }
-
-  .img-hover-zoom--colorize img {
-    transition: transform .5s, filter 1.5s ease-in-out;
-    filter: grayscale(100%);
-    max-width: 70%;
-  }
-
-  .img-hover-zoom--colorize:hover img {
-    filter: grayscale(0);
-    transform: scale(1.1);
-    max-width: 85%;
-  }
-
-  .img__wrap:hover .img__description {
-    visibility: visible;
-    opacity: 1;
-    max-width: 50%;
-  }
-  .p-button{
-    font-size: 10px;
-  }
-
-  .p-button-raised {
-    max-width: 80%;
-  }  
-
-  .p-button-raised1 {
-    max-width: 80%;
-  } 
-
-  .p-button-label {
-    flex: 1 1 auto;
-}
-
-  .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  }
-
-  .fa:hover {
-  opacity: 0.7;
-  }
-
-  .text-primary {
-    color: #244986 !important;
-    font-style: italic;
-  }
-
-  p {
     margin-top: 0;
     margin-bottom: 0rem;
 }
+
 .p-dialog .p-dialog-header {
-  border-bottom: 0 none;
-  background: #000000b3;
-  color: #495057;
-  padding: .5rem;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
+    border-bottom: 0 none;
+    background: #000000b3;
+    color: #495057;
+    padding: .5rem;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
 }
-  
+
+.p-dialog .p-dialog-content {
+    padding: 0 1.5rem 2rem;
+    background: linear-gradient(to left, #f5fcfd, #90badc);
+    color: #495057;
+}
+
+@media only screen and (min-width: 250px) and (max-width: 720px) {
+    .jyoti {
+        width: 33%;
+        height: auto;
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        display: block;
+        max-width: fit-content;
+        text-align: center;
+        max-width: 100%;
+    }
+    .karan {
+        width: 33%;
+        height: auto;
+        position: absolute;
+        top: 40%;
+        left: 35%;
+        display: block;
+        max-width: fit-content;
+        text-align: center;
+        max-width: 100%;
+    }
+    .img-hover-zoom--colorize img {
+        transition: transform .5s, filter 1.5s ease-in-out;
+        filter: grayscale(100%);
+        max-width: 70%;
+    }
+    .img-hover-zoom--colorize:hover img {
+        filter: grayscale(0);
+        transform: scale(1.1);
+        max-width: 85%;
+    }
+    .img__wrap:hover .img__description {
+        visibility: visible;
+        opacity: 1;
+        max-width: 50%;
+    }
+    .p-button {
+        font-size: 10px;
+    }
+    .p-button-raised {
+        max-width: 80%;
+    }
+    .p-button-raised1 {
+        max-width: 80%;
+    }
+    .p-button-label {
+        flex: 1 1 auto;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .text-primary {
+        color: #244986 !important;
+        font-style: italic;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .p-dialog .p-dialog-header {
+        border-bottom: 0 none;
+        background: #000000b3;
+        color: #495057;
+        padding: .5rem;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1440px) {
-  .jyoti{
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 45%;
-    left: 16%;
-    display: block;
-    max-width: fit-content;
-    text-align: center;
-}
-.karan{
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 45%;
-  left: 54%;
-  display: block;
-  max-width: fit-content;
-  text-align: center;
-}
-  .img-hover-zoom--colorize img {
-    transition: transform .5s, filter 1.5s ease-in-out;
-    filter: grayscale(100%);
-    max-width: 100%;
-  }
-
-  .img-hover-zoom--colorize:hover img {
-    filter: grayscale(0);
-    transform: scale(1.1);
-    max-width: 100%;
-  }
-
-  .img__wrap:hover .img__description {
-    visibility: visible;
-    opacity: 1;
-    max-width: 50%;
-  }
-  .p-button{
-    font-size: 20px;
-  }
-
-  .p-button-raised {
-  max-width: 80%;
-  }  
-
-  .p-button-raised1 {
-    max-width: 80%;
-  } 
-
-  .p-button-label {
-    flex: 1 1 auto;
-}
-
-  .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  }
-
-  .fa:hover {
-  opacity: 0.7;
-  }
-
-  .text-primary {
-    color: #244986 !important;
-    font-style: italic;
-  }
-  
-  p {
-    margin-top: 0;
-    margin-bottom: 0rem;
-}
-.p-dialog .p-dialog-header {
-  border-bottom: 0 none;
-  background: #000000b3;
-  color: #495057;
-  padding: .5rem;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
-}
+    .jyoti {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 45%;
+        left: 16%;
+        display: block;
+        max-width: fit-content;
+        text-align: center;
+    }
+    .karan {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 45%;
+        left: 54%;
+        display: block;
+        max-width: fit-content;
+        text-align: center;
+    }
+    .img-hover-zoom--colorize img {
+        transition: transform .5s, filter 1.5s ease-in-out;
+        filter: grayscale(100%);
+        max-width: 100%;
+    }
+    .img-hover-zoom--colorize:hover img {
+        filter: grayscale(0);
+        transform: scale(1.1);
+        max-width: 100%;
+    }
+    .img__wrap:hover .img__description {
+        visibility: visible;
+        opacity: 1;
+        max-width: 50%;
+    }
+    .p-button {
+        font-size: 20px;
+    }
+    .p-button-raised {
+        max-width: 80%;
+    }
+    .p-button-raised1 {
+        max-width: 80%;
+    }
+    .p-button-label {
+        flex: 1 1 auto;
+    }
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .text-primary {
+        color: #244986 !important;
+        font-style: italic;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0rem;
+    }
+    .p-dialog .p-dialog-header {
+        border-bottom: 0 none;
+        background: #000000b3;
+        color: #495057;
+        padding: .5rem;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+    }
 }

@@ -1,73 +1,110 @@
-.img-responsive{
-    background-image: url("../../src/assets/images/backimgae.jpg");
+.img-responsive {
+    background-image: url("../assets/images/final-backimg1.png");
     background-position: center center;
-    background-attachment:fixed;
-    background-size:cover;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100%;
     overflow: hidden;
     background-repeat: no-repeat;
-    width:100%;
+    width: 100%;
     position: absolute;
+}
+
+.centre-text {
+    font-size: 60px;
+    font-family: helvetica;
+    padding-top: 40px;
+    margin: 1em;
+    color: #0000009c;
+}
+
+.redText {
+    color: rgba(5, 5, 5, 0.151);
+}
+
+.blackText {
+    color: #62a8da;
+    font-weight: bold;
 }
 
 ::ng-deep .customDialog {
     width: 20% !important;
     height: 100% !important;
-    background: #000428; 
+    background: #000428;
     background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
     overflow: hidden;
 }
-.p-button.p-button-info{
+
+.p-button.p-button-info {
     color: #ffffff;
     background: #000304;
     border: 1px solid #000000;
 }
 
-
-@media  screen and (min-width: 250px) and (max-width: 720px) {
-    ::ng-deep .customDialog {
+@media screen and (min-width: 250px) and (max-width: 720px) {
+     ::ng-deep .customDialog {
         width: 52.5% !important;
         height: 100% !important;
-        background: #000428; 
+        background: #000428;
         background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
         overflow: hidden;
     }
-    .img-responsive{
-        background-image: url("../../src/assets/images/backimgae.jpg");
+    .img-responsive {
+        background-image: url("../../src/assets/images/final-backimg1.png");
         background-position: center center;
-        background-attachment:fixed;
-        background-size:cover;
+        background-attachment: fixed;
+        background-size: cover;
         height: 100%;
         overflow: hidden;
         background-repeat: no-repeat;
-        width: 100%;       
-        margin: 0 ;
+        width: 100%;
+        margin: 0;
     }
-    .p-sidebar .p-sidebar-header + .p-sidebar-content {
+    .p-sidebar .p-sidebar-header+.p-sidebar-content {
         padding-top: 0;
         position: absolute;
     }
+    .p-button.p-button-icon-only {
+        width: 5.357rem;
+        padding: .5rem 0;
+    }
+    .centre-text {
+        font-size: 20px;
+        font-family: helvetica;
+        padding-top: 40px;
+        margin: 1em;
+        color: #0000009c;
+    }
 }
 
-
-@media  screen and (min-width: 721px) and (max-width: 1440px)  {
-    ::ng-deep .customDialog {
+@media screen and (min-width: 721px) and (max-width: 1440px) {
+     ::ng-deep .customDialog {
         width: 50% !important;
         height: 100% !important;
-        background: #000428; 
+        background: #000428;
         background: linear-gradient(to right, rgb(11 11 12 / 73%), #1f1f21);
         overflow: hidden;
     }
-    .img-responsive{
-        background-image: url("../../src/assets/images/backimgae.jpg");
+    .img-responsive {
+        background-image: url("../../src/assets/images/final-backimg1.png");
         background-position: center center;
-        background-attachment:fixed;
-        background-size:cover;
+        background-attachment: fixed;
+        background-size: cover;
         height: 100%;
         overflow: hidden;
         background-repeat: no-repeat;
-        width: 100%;     
-        margin: 0 ;
-          
+        width: 100%;
+        margin: 0;
+    }
+    .p-button.p-button-icon-only {
+        width: 5.357rem;
+        padding: .5rem 0;
+    }
+    .centre-text {
+        font-size: 30px;
+        font-family: helvetica;
+        padding-top: 35px;
+        margin: 1em;
+        color: #0000009c;
     }
 }
